@@ -46,25 +46,31 @@
     <div class="modal__body">
       <h2 class="modal__title">Заполните форму и&nbsp;мы&nbsp;свяжемся с&nbsp;вами!</h2>
       <p class="modal__descr">Наш специалист перезвонит вам в&nbsp;течении 1&nbsp;часа</p>
-      <form class="modal__form form">
+      <form action="" class="modal__form form" id="add-form">
         <fieldset class="form__fieldset">
           <label class="form__label">
             <span class="form__label-text">Имя</span>
-            <input class="form__input" type="text" name="name">
+            <div class="input-box">
+              <input class="form__input input-field" type="text" name="name" data-min-length="2" data-max-length="20">
+            </div>
           </label>
 
           <label class="form__label">
             <span class="form__label-text">Фамилия</span>
-            <input class="form__input" type="text" name="surname">
+            <div class="input-box">
+              <input class="form__input input-field" type="text" name="surname" data-min-length="2" data-max-length="20">
+            </div>            
           </label>
           
           <label class="form__label">
             <span class="form__label-text">Телефон</span>
-            <input class="form__input" type="text" name="phone">
+            <div class="input-box">
+              <input class="form__input input-field" type="text" name="phone" data-min-length="2" data-max-length="20">
+            </div>            
           </label>
         </fieldset>
 
-        <button class="main-btn form__submit" type="submit">Записаться на пробный урок</button>       
+        <button class="main-btn form__submit send-btn" type="submit">Записаться на пробный урок</button>       
       </form>
       <button class="modal__close" type="button">
         <svg width="24" height="24" viewBox="0 0 24 24 " fill="currentColor" xmlns="http://www.w3.org/2000/svg">
